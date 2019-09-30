@@ -7,6 +7,12 @@ class App extends Component {
   render () {
     return (
       <div className="App">
+        <nav>
+          <ul>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/courses">Courses</a></li>
+          </ul>
+        </nav>
         <ol style={{textAlign: 'left'}}>
           <li>Add Routes to load "Users" and "Courses" on different pages (by entering a URL, without Links)</li>
           <li>Add a simple navigation with two links => One leading to "Users", one leading to "Courses"</li>

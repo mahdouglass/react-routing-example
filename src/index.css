@@ -4,3 +4,14 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
+
+nav {
+  height: 50px;
+  width: 100%;
+}
+
+ul li {
+  float: right;
+  list-style: none;
+  margin-right: 15px;
+}
