@@ -20,7 +20,7 @@ class Courses extends Component {
                     {
                         this.state.courses.map( course => {
                             return (
-                                <Link key={course.id} to="/course">
+                                <Link key={course.id} to={this.props.match.url + '/course'}>
                                     <article className="Course">{course.title}</article>
                                 </Link>)
                         } )
