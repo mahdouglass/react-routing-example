@@ -9,7 +9,7 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
         <Nav></Nav>
-        <ol style={{textAlign: 'left'}}>
+        <ol style={{textAlign: 'left', paddingTop: '50px'}}>
           <li>Add Routes to load "Users" and "Courses" on different pages (by entering a URL, without Links)</li>
           <li>Add a simple navigation with two links => One leading to "Users", one leading to "Courses"</li>
           <li>Make the courses in "Courses" clickable by adding a link and load the "Course" component in the place of "Courses" (without passing any data for now)</li>
