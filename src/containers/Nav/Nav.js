@@ -17,7 +17,7 @@ class Nav extends Component {
                 </nav>
                 <Route path="/users" component={Users} />
                 <Route path="/courses" component={Courses} />
-                <Route path="/courses/:courseId" component={Course} />
+                <Route path="/courses/:courseId/:courseTitle" component={Course} />
             </header>
         )
     }
