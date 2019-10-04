@@ -4,7 +4,7 @@ import { NavLink, Route, Switch } from 'react-router-dom';
 import Courses from '../Courses/Courses';
 import Course from '../Course/Course';
 import Users from '../Users/Users';
-import Error from '../404/404';
+import Error from '../../components/404/404';
 
 class Nav extends Component {
     render() {
