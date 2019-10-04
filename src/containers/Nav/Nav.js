@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { NavLink, Route } from 'react-router-dom';
+import { NavLink, Route, Switch } from 'react-router-dom';
 
 import Courses from '../Courses/Courses';
 import Course from '../Course/Course';
 import Users from '../Users/Users';
+import Error from '../404/404';
 
 class Nav extends Component {
     render() {
@@ -15,9 +16,12 @@ class Nav extends Component {
                         <li><NavLink to="/courses">Courses</NavLink></li>
                     </ul>
                 </nav>
-                <Route path="/users" component={Users} />
-                <Route path="/courses" component={Courses} />
-                <Route path="/courses/:courseId/:courseTitle" component={Course} />
+                <Switch>
+                    <Route path="/users" component={Users} />
+                    <Route path="/courses" component={Courses} />
+                    <Route path="/courses/:courseId/:courseTitle" component={Course} />
+                    <Route render={() => <h1>Not found</h1>} />
+                </Switch>
             </header>
         )
     }
