@@ -17,6 +17,7 @@ class Nav extends Component {
                     </ul>
                 </nav>
                 <Switch>
+                    <Route path="/" exact />
                     <Route path="/users" component={Users} />
                     <Route path="/courses" component={Courses} />
                     <Route path="/courses/:courseId/:courseTitle" component={Course} />
