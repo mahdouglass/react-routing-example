@@ -21,7 +21,7 @@ class Nav extends Component {
                     <Route path="/users" component={Users} />
                     <Route path="/courses" component={Courses} />
                     <Route path="/courses/:courseId/:courseTitle" component={Course} />
-                    <Route render={() => <h1>Not found</h1>} />
+                    <Route component={Error} />
                 </Switch>
             </header>
         )
