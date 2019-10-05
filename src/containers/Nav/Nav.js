@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Route, Switch } from 'react-router-dom';
+import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
 
 import Courses from '../Courses/Courses';
 import Course from '../Course/Course';
@@ -21,6 +21,7 @@ class Nav extends Component {
                     <Route path="/users" component={Users} />
                     <Route path="/courses" component={Courses} />
                     <Route path="/courses/:courseId/:courseTitle" component={Course} />
+                    <Redirect from="/all-courses" to="/courses" />
                     <Route component={Error} />
                 </Switch>
             </header>
